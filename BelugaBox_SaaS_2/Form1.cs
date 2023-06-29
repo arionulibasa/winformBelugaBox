@@ -66,7 +66,6 @@ namespace BelugaBox_SaaS_2
 
             string url = "https://employeeauthwebapijptest01.azurewebsites.net/api/auth/signin";
             string jsonBody = JsonConvert.SerializeObject(loginBody);
-            MessageBox.Show(jsonBody);
 
 
             RestRequest req = new RestRequest(url, HttpMethod.POST, "application/json");
@@ -74,13 +73,11 @@ namespace BelugaBox_SaaS_2
             //MessageBox.Show(resp.StatusCode.ToString());
             LoginResponse result = resp.DataFromJson<LoginResponse>();
 
-            //MessageBox.Show(usernameVal);
             //string auth_token = result.submissionobject.accesstoken;
 
 
             if (result.submissionStatus == "success")
             {
-                //MessageBox.Show(result.submissionObject.accessToken);
                 this.Hide();
                 Form2 form2 = new Form2(result.submissionObject.accessToken, usernameVal, passwordVal);
                 form2.Show();

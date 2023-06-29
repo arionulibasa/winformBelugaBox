@@ -118,7 +118,7 @@ namespace BelugaBox_SaaS_2
                     //MessageBox.Show(result.Result);
                     this.Hide();
                     //Form3 form3 = new Form3(result.Result);
-                    Form3 form3 = new Form3(username, password, result.Result);
+                    Form3 form3 = new Form3(username, password, result.Result, auth_key);
                     form3.Show();
 
                 }
