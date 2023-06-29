@@ -1,50 +1,44 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Newtonsoft.Json;
-using RestWrapper;
 using System.IO;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Globalization;
+using System.Windows.Forms;
 
 namespace BelugaBox_SaaS_2
 {
     public partial class Form2 : Form
     {
         private string auth_key;
-        private static HttpClient _client = null;
+        private string username;
+        private string password;
 
+        private static HttpClient _client = null;
 
         public Form2()
         {
             InitializeComponent();
-            
+
         }
 
-        public Form2(string content)
+        public Form2(string content1,string content2, string content3)
         {
             InitializeComponent();
-            auth_key = content;
-            
+            auth_key = content1;
+            username = content2;
+            password = content3;
         }
 
-
+        
 
         public class UploadBody
-        { 
+        {
 
             public string userName { get; set; }
             public Form1.SubmissionObject submissionObject { get; set; }
 
 
-        
+
         }
 
 
@@ -65,11 +59,6 @@ namespace BelugaBox_SaaS_2
             public bool isSubmissionSuccess { get; set; }
         }
 
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private async void button2_Click(object sender, EventArgs e)
         {
@@ -98,15 +87,12 @@ namespace BelugaBox_SaaS_2
             Dictionary<string, string> wavFile = new Dictionary<string, string>();
 
 
-
             var fileData = File.ReadAllBytes(filePath);
             String base64Encoded = Convert.ToBase64String(fileData);
 
             var requestContent = new MultipartFormDataContent();
-            //    here you can specify boundary if you need---^
             var imageContent = new ByteArrayContent(fileData);
-            imageContent.Headers.ContentType =
-                MediaTypeHeaderValue.Parse("audio/wav");
+            imageContent.Headers.ContentType = MediaTypeHeaderValue.Parse("audio/wav");
 
             requestContent.Add(imageContent, "File", "demo1_stereo.wav");
 
@@ -115,28 +101,32 @@ namespace BelugaBox_SaaS_2
                 BaseAddress = new Uri(url),
             };
 
-            using (var requestMessage =
-            new HttpRequestMessage(System.Net.Http.HttpMethod.Post, url))
+
+
+            using (var requestMessage = new HttpRequestMessage(System.Net.Http.HttpMethod.Post, url))
             {
                 requestMessage.Headers.Authorization = new AuthenticationHeaderValue("Bearer", auth_key);
-                requestMessage.Headers.Add("UserName" ,usernameVal);
-                requestMessage.Headers.Add( "CustomerId", customerID );
-                requestMessage.Headers.Add( "CustomerName", customerName );
-                requestMessage.Headers.Add( "KeyValue", keyValue );
-                requestMessage.Headers.Add( "UploadDate", currentTime.ToString());
+                requestMessage.Headers.Add("UserName", usernameVal);
+                requestMessage.Headers.Add("CustomerId", customerID);
+                requestMessage.Headers.Add("CustomerName", customerName);
+                requestMessage.Headers.Add("KeyValue", keyValue);
+                requestMessage.Headers.Add("UploadDate", currentTime.ToString());
                 requestMessage.Content = requestContent;
                 using (var response = client.SendAsync(requestMessage).Result)
                 {
                     var result = response.Content.ReadAsStringAsync();
-                    MessageBox.Show(result.Result);
-                }
-                
-                
+                    //MessageBox.Show(result.Result);
+                    this.Hide();
+                    //Form3 form3 = new Form3(result.Result);
+                    Form3 form3 = new Form3(username, password, result.Result);
+                    form3.Show();
 
-               
+                }
+
             }
 
-           
+
+
 
             //wavFile.Add("File", base64Encoded);
 

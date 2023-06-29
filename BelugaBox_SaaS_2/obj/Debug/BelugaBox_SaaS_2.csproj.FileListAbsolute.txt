@@ -38,3 +38,43 @@ C:\Users\Intern-FOS\Music\BelugaBox_SaaS_2\BelugaBox_SaaS_2\obj\Debug\BelugaBox_
 C:\Users\Intern-FOS\Music\BelugaBox_SaaS_2\BelugaBox_SaaS_2\obj\Debug\BelugaBox_SaaS_2.pdb
 C:\Users\Intern-FOS\Music\BelugaBox_SaaS_2\BelugaBox_SaaS_2\obj\Debug\BelugaBox_SaaS_2.Form2.resources
 C:\Users\Intern-FOS\Music\BelugaBox_SaaS_2\BelugaBox_SaaS_2\obj\Debug\BelugaBox_SaaS_2.Form3.resources
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\BelugaBox_SaaS_2.exe.config
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\BelugaBox_SaaS_2.exe
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\BelugaBox_SaaS_2.pdb
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\Newtonsoft.Json.dll
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\RestWrapper.dll
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Buffers.dll
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Memory.dll
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Net.Http.dll
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Numerics.Vectors.dll
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Security.Cryptography.Algorithms.dll
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Security.Cryptography.Encoding.dll
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Security.Cryptography.Primitives.dll
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Text.Encodings.Web.dll
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Text.Json.dll
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.ValueTuple.dll
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\Newtonsoft.Json.xml
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Buffers.xml
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Memory.xml
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Numerics.Vectors.xml
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Text.Encodings.Web.xml
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Text.Json.xml
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\bin\Debug\System.ValueTuple.xml
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\obj\Debug\BelugaBox_SaaS_2.csproj.AssemblyReference.cache
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\obj\Debug\BelugaBox_SaaS_2.csproj.SuggestedBindingRedirects.cache
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\obj\Debug\BelugaBox_SaaS_2.Form1.resources
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\obj\Debug\BelugaBox_SaaS_2.Form2.resources
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\obj\Debug\BelugaBox_SaaS_2.Form3.resources
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\obj\Debug\BelugaBox_SaaS_2.Properties.Resources.resources
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\obj\Debug\BelugaBox_SaaS_2.csproj.GenerateResource.cache
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\obj\Debug\BelugaBox_SaaS_2.csproj.CoreCompileInputs.cache
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\obj\Debug\BelugaBox_SaaS_2.csproj.CopyComplete
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\obj\Debug\BelugaBox_SaaS_2.exe
+D:\Arion User\winformBelugaBox\BelugaBox_SaaS_2\obj\Debug\BelugaBox_SaaS_2.pdb

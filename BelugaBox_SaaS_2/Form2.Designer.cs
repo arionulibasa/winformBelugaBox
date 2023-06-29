@@ -39,7 +39,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +48,6 @@
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Location = new System.Drawing.Point(77, 46);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(617, 366);
@@ -67,7 +65,7 @@
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Location = new System.Drawing.Point(59, 107);
+            this.groupBox2.Location = new System.Drawing.Point(65, 71);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(479, 210);
             this.groupBox2.TabIndex = 3;
@@ -100,7 +98,6 @@
             this.label2.Size = new System.Drawing.Size(77, 16);
             this.label2.TabIndex = 8;
             this.label2.Text = "CustomerID";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox4
             // 
@@ -141,22 +138,13 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(254, 323);
+            this.button2.Location = new System.Drawing.Point(259, 305);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(115, 30);
             this.button2.TabIndex = 2;
             this.button2.Text = "Upload";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(254, 36);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 38);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Select WAV files";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
@@ -177,7 +165,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
