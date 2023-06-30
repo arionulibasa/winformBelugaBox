@@ -57,8 +57,8 @@ namespace BelugaBox_SaaS_2
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            string usernameVal = textBox1.Text;
-            string passwordVal = textBox2.Text;
+            string usernameVal = maskedTextBox1.Text;
+            string passwordVal = maskedTextBox2.Text;
 
             LoginBody loginBody = new LoginBody();
             loginBody.userName = usernameVal;
@@ -93,6 +93,11 @@ namespace BelugaBox_SaaS_2
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

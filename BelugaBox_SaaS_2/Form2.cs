@@ -12,8 +12,9 @@ namespace BelugaBox_SaaS_2
         private string auth_key;
         private string username;
         private string password;
-
         private static HttpClient _client = null;
+        OpenFileDialog openFile = new OpenFileDialog();
+
 
         public Form2()
         {
@@ -64,8 +65,8 @@ namespace BelugaBox_SaaS_2
         {
             string usernameVal = textBox1.Text;
             string customerID = textBox2.Text;
-            string keyValue = textBox3.Text;
-            string customerName = textBox4.Text;
+            string customerName = textBox3.Text;
+            string keyValue = textBox4.Text;
 
             DateTime currentTime = DateTime.Now;
 
@@ -82,7 +83,8 @@ namespace BelugaBox_SaaS_2
 
 
             string url = "https://belugaboxuploadapiappjptest01.azurewebsites.net/api/blob/upload/";
-            string filePath = "C:/Users/Intern-FOS/Documents/wav_files/demo1_stereo.wav";
+            //string filePath = "C:/Users/Intern-FOS/Documents/wav_files/demo1_stereo.wav";
+            string filePath = openFile.FileName;
 
             Dictionary<string, string> wavFile = new Dictionary<string, string>();
 
@@ -125,11 +127,39 @@ namespace BelugaBox_SaaS_2
 
             }
 
+        
 
 
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openFile.Title = "Select File";
+            openFile.InitialDirectory = @"C:\";
+            openFile.Filter = "WAV file (*.wav)|*.wav";
+            openFile.ShowDialog();
+            if (openFile.FileName != "")
+            {
+                textBox5.Text = openFile.FileName;
+            }
+            else
+            {
+                textBox5.Text = "You didn't select the file";
+            }
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

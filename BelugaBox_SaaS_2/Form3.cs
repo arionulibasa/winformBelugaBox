@@ -107,7 +107,11 @@ namespace BelugaBox_SaaS_2
             //MessageBox.Show(resp.StatusCode.ToString());
             //MessageBox.Show(auth_key);
 
-            label1.Text = resp.DataAsString;
+            textBox1.Text = resp.DataAsString;
+
+
+            
+
             //LoginResponse result = resp.DataFromJson<LoginResponse>();
             //label1.Text = $"id: {result.id}, name: {result.name}, filename: {result.fileName}, fileUrl: {result.fileUrl}, " +
             //    $"retryCount {result.retryCount}, status: {result.status}, date: {result.date}, queueLogDetails: {result.queueLogDetails} " +
