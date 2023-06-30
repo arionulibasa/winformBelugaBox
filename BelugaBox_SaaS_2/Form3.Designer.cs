@@ -36,7 +36,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(253, 37);
+            this.button1.Location = new System.Drawing.Point(413, 37);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 23);
             this.button1.TabIndex = 2;
@@ -49,7 +49,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 92);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(831, 335);
+            this.groupBox1.Size = new System.Drawing.Size(997, 448);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Results";
@@ -58,7 +58,7 @@
             // 
             this.label1.Location = new System.Drawing.Point(19, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(796, 281);
+            this.label1.Size = new System.Drawing.Size(972, 405);
             this.label1.TabIndex = 0;
             // 
             // Form3
@@ -66,7 +66,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(855, 456);
+            this.ClientSize = new System.Drawing.Size(1033, 571);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form3";

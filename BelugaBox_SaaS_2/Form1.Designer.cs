@@ -91,6 +91,7 @@
             this.label3.Size = new System.Drawing.Size(130, 29);
             this.label3.TabIndex = 5;
             this.label3.Text = "BelugaBox";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // groupBox1
             // 

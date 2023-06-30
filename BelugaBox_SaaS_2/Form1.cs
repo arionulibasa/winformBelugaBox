@@ -92,5 +92,9 @@ namespace BelugaBox_SaaS_2
 
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -127,20 +127,10 @@ namespace BelugaBox_SaaS_2
 
 
 
+        }
 
-            //wavFile.Add("File", base64Encoded);
-
-
-            ////UploadBody uploadBody = new UploadBody();
-            //RestRequest req = new RestRequest(url, HttpMethod.POST);
-            //req.Headers = HEADER;
-            ////req.Headers.Add("Content-Type", "multipart/form-data");
-            //RestResponse resp = req.Send(wavFile);
-
-
-
-            //MessageBox.Show(resp.StatusCode.ToString());
-
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
 
         }
     }

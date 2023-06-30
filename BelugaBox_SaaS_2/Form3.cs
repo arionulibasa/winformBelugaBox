@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using RestWrapper;
@@ -88,8 +82,7 @@ namespace BelugaBox_SaaS_2
 
         }
 
-
-        
+                
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -114,11 +107,12 @@ namespace BelugaBox_SaaS_2
             //MessageBox.Show(resp.StatusCode.ToString());
             //MessageBox.Show(auth_key);
 
-            LoginResponse result = resp.DataFromJson<LoginResponse>();
-            label1.Text = $"id: {result.id}, name: {result.name}, filename: {result.fileName}, fileUrl: {result.fileUrl}, " +
-                $"retryCount {result.retryCount}, status: {result.status}, date: {result.date}, queueLogDetails: {result.queueLogDetails} " +
-                $"acoustics: [callId: {result.acoustics[0].callId.ToString()}, operator: {result.acoustics[0].@operator}";
-                //$"fileName: {result.acoustics[0].fileName.ToString()}, score: {result.acoustics[0].score}, channel:"; 
+            label1.Text = resp.DataAsString;
+            //LoginResponse result = resp.DataFromJson<LoginResponse>();
+            //label1.Text = $"id: {result.id}, name: {result.name}, filename: {result.fileName}, fileUrl: {result.fileUrl}, " +
+            //    $"retryCount {result.retryCount}, status: {result.status}, date: {result.date}, queueLogDetails: {result.queueLogDetails} " +
+            //$"acoustics: [callId: {result.acoustics[0].callId.ToString()}, operator: {result.acoustics[0].@operator}";
+            //$"fileName: {result.acoustics[0].fileName.ToString()}, score: {result.acoustics[0].score}, channel:"; 
             //$"{result.acoustics[0].channel.ToString()}, startTime: {result.acoustics[0].startTime.ToString()}, endTime: {result.acoustics[0].endTime.ToString()}, " +
             //$"length: {result.acoustics[0].length.ToString()}, calm: {result.acoustics[0].calm.ToString()}, anger: {result.acoustics[0].anger.ToString()}, " +
             //$"joy: {result.acoustics[0].joy.ToString()}, sorrow: {result.acoustics[0].sorrow.ToString()}, vigor: {result.acoustics[0].vigor.ToString()}," +
