@@ -30,7 +30,6 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -57,19 +56,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Results";
             // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(12, 63);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.progressBar1.Size = new System.Drawing.Size(997, 23);
-            this.progressBar1.TabIndex = 5;
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(21, 21);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(960, 410);
             this.textBox1.TabIndex = 0;
             // 
@@ -79,7 +71,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1033, 571);
-            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form3";
@@ -93,7 +84,6 @@
         #endregion
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.TextBox textBox1;
     }
 }
